@@ -34,8 +34,8 @@ def main():
     print("当前数据库表结构：\n", schema_info)
 
     while True:
-        prompt = input("请输入问题（输入'退出'结束）：")
-        if prompt.lower() == "退出":
+        prompt = input("请输入问题（按回车键结束）：")
+        if prompt == "":  # 判断输入是否为空，即用户按了回车键
             break
 
         try:
